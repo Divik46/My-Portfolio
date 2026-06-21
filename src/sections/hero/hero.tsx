@@ -122,7 +122,7 @@ export function Hero() {
               target="_blank"
               className="group flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm font-semibold text-white backdrop-blur-md transition-all hover:bg-white/10 hover:scale-105 active:scale-95 magnetic"
             >
-              Download CVs
+              Download CV
               <Download size={16} className="transition-transform group-hover:-translate-y-1" />
             </a>
           </div>
