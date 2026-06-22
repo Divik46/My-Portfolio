@@ -26,7 +26,8 @@
 
 @layer base {
   :root {
-    --background: 0 0% 2%; /* Very dark #050505 */
+    --background: 0 0% 2%;
+    /* Very dark #050505 */
     --foreground: 0 0% 98%;
 
     --card: 0 0% 4%;
@@ -35,16 +36,19 @@
     --popover: 0 0% 4%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 210 100% 50%; /* Blue */
+    --primary: 210 100% 50%;
+    /* Blue */
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 280 100% 60%; /* Purple */
+    --secondary: 280 100% 60%;
+    /* Purple */
     --secondary-foreground: 0 0% 98%;
 
     --muted: 0 0% 10%;
     --muted-foreground: 0 0% 60%;
 
-    --accent: 180 100% 50%; /* Cyan */
+    --accent: 180 100% 50%;
+    /* Cyan */
     --accent-foreground: 0 0% 9%;
 
     --destructive: 0 84.2% 60.2%;
@@ -62,6 +66,7 @@
   * {
     border-color: hsl(var(--border));
   }
+
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
@@ -71,7 +76,8 @@
 }
 
 /* Lenis Smooth Scroll Recommended CSS */
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 
@@ -95,13 +101,16 @@ html.lenis, html.lenis body {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: hsl(var(--background));
 }
+
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--muted));
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--muted-foreground));
 }
@@ -121,11 +130,33 @@ html.lenis, html.lenis body {
 }
 
 @keyframes floating {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
+
 .animate-floating {
   animation: floating 3s ease-in-out infinite;
 }
 
+@keyframes btn-animated-multi {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btn-animated-multi {
+  background: linear-gradient(270deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)), hsl(var(--primary)));
+  background-size: 300% 300%;
+  animation: btn-animated-multi 4s ease infinite;
+  color: white;
+  border: none;
+}

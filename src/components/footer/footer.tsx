@@ -49,10 +49,10 @@ export function Footer() {
 
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 text-sm font-medium text-white hover:text-primary transition-colors group magnetic"
+            className="flex items-center gap-2 text-sm font-medium text-white btn-animated-multi px-6 py-3 rounded-full transition-all group magnetic shadow-lg hover:shadow-primary/50 hover:scale-105 active:scale-95"
           >
             <span>Back to top</span>
-            <div className="p-2 rounded-full bg-white/5 group-hover:bg-primary/20 transition-colors">
+            <div className="rounded-full transition-colors">
               <ArrowUp size={16} className="group-hover:-translate-y-1 transition-transform" />
             </div>
           </button>

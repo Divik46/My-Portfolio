@@ -170,10 +170,9 @@ export function Contact() {
             <button 
               type="submit" 
               disabled={isSubmitting}
-              className="group relative w-full overflow-hidden rounded-full bg-white px-8 py-4 text-sm font-bold text-background transition-transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:hover:scale-100 magnetic"
+              className="group relative w-full overflow-hidden rounded-full btn-animated-multi px-8 py-4 text-sm font-bold text-white transition-transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:hover:scale-100 magnetic shadow-lg hover:shadow-primary/50"
             >
-              <div className="absolute inset-0 bg-primary translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ease-out" />
-              <span className="relative z-10 flex items-center justify-center gap-2 group-hover:text-white transition-colors">
+              <span className="relative z-10 flex items-center justify-center gap-2 text-white transition-colors">
                 {isSubmitting ? "Sending..." : isSuccess ? "Message Sent!" : "Send Message"}
                 {!isSubmitting && !isSuccess && <Send size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />}
               </span>

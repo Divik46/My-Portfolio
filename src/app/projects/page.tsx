@@ -45,9 +45,9 @@ export default function ProjectsPage() {
                 <button
                   key={category}
                   onClick={() => setActiveCategory(category)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                     activeCategory === category 
-                      ? "bg-white text-background" 
+                      ? "btn-animated-multi shadow-lg shadow-primary/30 scale-105" 
                       : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-white"
                   }`}
                 >

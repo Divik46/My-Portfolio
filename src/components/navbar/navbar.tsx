@@ -54,7 +54,7 @@ export function Navbar() {
           ))}
           <a
             href="tel:9360731325"
-            className="px-5 py-2 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary/90 transition-transform active:scale-95 hover:scale-105 magnetic"
+            className="px-5 py-2 text-sm font-semibold text-white btn-animated-multi rounded-full transition-transform active:scale-95 hover:scale-105 magnetic shadow-lg hover:shadow-primary/50"
           >
             Let&apos;s Talk
           </a>
