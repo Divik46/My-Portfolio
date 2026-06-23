@@ -89,22 +89,22 @@ export default function ProjectsPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-80" />
-                    <div className="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
+                    {/* <div className="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
                       {project.tech.slice(0, 3).map((tech, i) => (
                         <span key={i} className="px-3 py-1 text-xs font-medium bg-black/50 backdrop-blur-md rounded-full border border-white/10 text-white/90">
                           {tech}
                         </span>
                       ))}
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className="p-6 relative z-10 -mt-10 flex flex-col flex-grow">
                     <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
-                    <p className="text-muted-foreground text-sm flex-grow mb-6">{project.description}</p>
+                    {/* <p className="text-muted-foreground text-sm flex-grow mb-6">{project.description}</p> */}
                     <div className="flex items-center justify-between pt-4 border-t border-white/10">
                       <span className="text-xs font-semibold uppercase tracking-widest text-primary">{project.category}</span>
                       <div className="flex gap-3">
-                        <a href={project.github} target="_blank" rel="noreferrer" className="text-white/50 hover:text-white transition-colors">Code</a>
+                        {/* <a href={project.github} target="_blank" rel="noreferrer" className="text-white/50 hover:text-white transition-colors">Code</a> */}
                         <a href={project.live} target="_blank" rel="noreferrer" className="text-white/50 hover:text-white transition-colors">Live</a>
                       </div>
                     </div>
